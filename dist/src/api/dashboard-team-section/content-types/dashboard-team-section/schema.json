@@ -1,0 +1,24 @@
+{
+    "kind": "collectionType",
+    "collectionName": "dashboard_team",
+    "info": {
+        "singularName": "dashboard-team-section",
+        "pluralName": "dashboard-team",
+        "displayName": "dashboard-team-section"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "left_section": {
+            "type": "json"
+        },
+        "right_section": {
+            "type": "json"
+        },
+        "right_section_counts": {
+            "type": "json"
+        }
+    }
+}

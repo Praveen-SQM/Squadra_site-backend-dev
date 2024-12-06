@@ -1,0 +1,25 @@
+{
+    "kind": "collectionType",
+    "collectionName": "journey_cards",
+    "info": {
+        "singularName": "journey-card",
+        "pluralName": "journey-cards",
+        "displayName": "journey-cards",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "service_title": {
+            "type": "string"
+        },
+        "service_description": {
+            "type": "text"
+        },
+        "video_url": {
+            "type": "text"
+        }
+    }
+}

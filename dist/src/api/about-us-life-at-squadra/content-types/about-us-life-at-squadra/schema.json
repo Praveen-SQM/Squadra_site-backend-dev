@@ -1,0 +1,18 @@
+{
+    "kind": "collectionType",
+    "collectionName": "about_us_life_at_squadras",
+    "info": {
+        "singularName": "about-us-life-at-squadra",
+        "pluralName": "about-us-life-at-squadras",
+        "displayName": "about-us-lifeAtSquadra"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "image_url": {
+            "type": "text"
+        }
+    }
+}

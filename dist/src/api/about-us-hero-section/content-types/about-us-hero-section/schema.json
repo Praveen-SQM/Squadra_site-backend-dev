@@ -1,0 +1,22 @@
+{
+    "kind": "collectionType",
+    "collectionName": "about_us_hero_sections",
+    "info": {
+        "singularName": "about-us-hero-section",
+        "pluralName": "about-us-hero-sections",
+        "displayName": "about-us-hero-section",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        }
+    }
+}

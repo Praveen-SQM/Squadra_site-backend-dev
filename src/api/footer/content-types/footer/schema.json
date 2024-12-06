@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company_name": {
+      "type": "string",
+      "required": true
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "services": {
+      "type": "json",
+      "required": true,
+      "description": "List of services (array of strings or objects)."
+    },
+    "company_links": {
+      "type": "json",
+      "description": "Company navigation links (array of strings or objects)."
+    },
+    "contact_info": {
+      "type": "json",
+      "description":"Company address and contact information (array of strings or objects)."
+    },
+    "social_links": {
+      "type": "json",
+      "description": "Social media links (array of objects with platform and URL)."
+    },
+    "copyright_text": {
+      "type": "string",
+      "default": "© Copyright Squadra Media Private Limited 2021. All rights reserved",
+      "required": true
+    },
+    "terms_of_service_link": {
+      "type": "string",
+      "description": "URL for the Terms of Service page."
+    },
+    "privacy_policy_link": {
+      "type": "string",
+      "description": "URL for the Privacy Policy page."
+    }
+  }
+}

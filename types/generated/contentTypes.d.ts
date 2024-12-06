@@ -400,6 +400,35 @@ export interface ApiAboutUsHeroSectionAboutUsHeroSection
   };
 }
 
+export interface ApiAboutUsLifeAtSquadraAboutUsLifeAtSquadra
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'about_us_life_at_squadras';
+  info: {
+    displayName: 'about-us-lifeAtSquadra';
+    pluralName: 'about-us-life-at-squadras';
+    singularName: 'about-us-life-at-squadra';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image_url: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-us-life-at-squadra.about-us-life-at-squadra'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAboutAbout extends Struct.CollectionTypeSchema {
   collectionName: 'abouts';
   info: {
@@ -1206,6 +1235,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-us-hero-section.about-us-hero-section': ApiAboutUsHeroSectionAboutUsHeroSection;
+      'api::about-us-life-at-squadra.about-us-life-at-squadra': ApiAboutUsLifeAtSquadraAboutUsLifeAtSquadra;
       'api::about.about': ApiAboutAbout;
       'api::company-logo.company-logo': ApiCompanyLogoCompanyLogo;
       'api::customer-journey.customer-journey': ApiCustomerJourneyCustomerJourney;
